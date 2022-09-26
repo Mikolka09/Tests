@@ -44,25 +44,39 @@ public class Exercise_1Test {
     public void areaOfTriangleTwo() {
         Exercise_1 ex = new Exercise_1();
         System.out.println("Area Of Triangle Two");
+        double res = 10.84262422110072;
+        Assert.assertEquals("Плащадь треугольника вариант 2: ", res, ex.AreaOfTriangleTwo(a, b, c), 0.001);
     }
 
     @Test
     public void areaOfRectangle() {
         Exercise_1 ex = new Exercise_1();
+        System.out.println("Area Of Rectangle");
+        double res = 50;
+        Assert.assertEquals("Плащадь прямоугольника: ", res, ex.AreaOfRectangle(a, b), 0.001);
     }
 
     @Test
     public void areaOfSquare() {
         Exercise_1 ex = new Exercise_1();
+        System.out.println("Area Of Square");
+        double res = 100;
+        Assert.assertEquals("Плащадь квадрата: ", res, ex.AreaOfSquare(a), 0.001);
     }
 
     @Test
     public void areaOfRhombusOne() {
         Exercise_1 ex = new Exercise_1();
+        System.out.println("Area Of Rhombus One");
+        double res = 50;
+        Assert.assertEquals("Плащадь ромба вариант 2: ", res, ex.AreaOfRhombusOne(a, h), 0.001);
     }
 
     @Test
     public void areaOfRhombusTwo() {
         Exercise_1 ex = new Exercise_1();
+        System.out.println("Area Of Rhombus Two");
+        double res = 25;
+        Assert.assertEquals("Плащадь ромба вариант 2: ", res, ex.AreaOfRhombusTwo(d1, d2), 0.001);
     }
 }
