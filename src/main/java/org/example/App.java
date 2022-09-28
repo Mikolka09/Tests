@@ -63,7 +63,13 @@ public class App
         String st = scan.nextLine();
         System.out.println(ex3.Palindrome(st)? "В строке присутствует Палиндром!":
                 "В строке не присутствует Палиндром!");
+        System.out.println("Количество гласных: "+ ex3.CountVowels(st));
+        System.out.println("Количество согласных: "+ ex3.CountConsonants(st));
+        System.out.print("Введите слово: ");
+        String word = scan.nextLine();
+        System.out.printf("Количество вхождений слова '%s' в строке: %s", word, ex3.CountWord(st, word));
 
-        System.out.println( "FINISH" );
+
+        System.out.println( "\nFINISH" );
     }
 }
